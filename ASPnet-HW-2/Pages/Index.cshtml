@@ -1,0 +1,10 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    @Model.AnimalService.Animals().First().ToPrettyString()
+    @Model.ShapesService.GetShapes().First().ToPrettyString()
+</div>
